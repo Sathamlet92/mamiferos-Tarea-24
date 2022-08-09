@@ -1,14 +1,14 @@
 package com.sathamlet.herenciaMamiferos;
 
-public class TIgre extends Felino {
+public class Tigre extends Felino {
     private String especieTigre;
 
-    public TIgre(String habitad, float altura, float largo, float peso,
+    public Tigre(String habitad, float altura, float largo, float peso,
                  String nombreCientifico, float tamanoGarras, double velocidad) {
         super(habitad, altura, largo, peso, nombreCientifico, tamanoGarras, velocidad);
     }
 
-    public TIgre(String habitad, float altura, float largo, float peso,
+    public Tigre(String habitad, float altura, float largo, float peso,
                  String nombreCientifico, float tamanoGarras, double velocidad, String especieTigre) {
         super(habitad, altura, largo, peso, nombreCientifico, tamanoGarras, velocidad);
         this.especieTigre = especieTigre;

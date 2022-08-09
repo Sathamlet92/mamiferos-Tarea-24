@@ -59,8 +59,8 @@ abstract public class Mamifero {
                 sb.append("\nTienen un tamanio de garras: ").append(((Leon) this).getTamanoGarras())
                         .append("\ny un potencial de rugido ").append(((Leon) this).getPotencialRugidoDecibel())
                         .append("dB");
-            } else if (this instanceof TIgre) {
-                sb.append("\nEspecie: ").append(((TIgre) this).getEspecieTigre());
+            } else if (this instanceof Tigre) {
+                sb.append("\nEspecie: ").append(((Tigre) this).getEspecieTigre());
             }
         } else if (this instanceof Canino) {
             sb.append("Estos caninos");
