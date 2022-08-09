@@ -63,7 +63,15 @@ abstract public class Mamifero {
                 sb.append("\nEspecie: ").append(((Tigre) this).getEspecieTigre());
             }
         } else if (this instanceof Canino) {
-            sb.append("Estos caninos");
+            sb.append("\nTienen un color de pelaje ").append(((Canino) this).getColor())
+                    .append(",\nun tamnio de colmillos ").append(((Canino) this).getTamColmillos());
+            if(this instanceof Lobo){
+                sb.append("\nEs de la especie ").append(((Lobo) this).getEspecieLobo())
+                        .append("\ny su camada fue de ").append(((Lobo) this).getNumCamada())
+                        .append(" cachorros");
+            } else if (this instanceof Perro) {
+                sb.append("\nTiene una fuerza de moridad de ").append(((Perro) this).getFuerzaMordida());
+            }
         }
         return sb.toString();
     }
