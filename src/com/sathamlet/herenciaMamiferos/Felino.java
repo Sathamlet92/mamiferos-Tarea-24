@@ -1,28 +1,23 @@
 package com.sathamlet.herenciaMamiferos;
 
-public class Felino extends Mamifero{
+abstract class Felino extends Mamifero{
 
     protected float tamanoGarras;
     protected double velocidad;
 
-
-    @Override
-    public String comer() {
-        return null;
+    public Felino(String habitad, float altura, float largo, float peso,
+                  String nombreCientifico, float tamanoGarras, double velocidad) {
+        super(habitad, altura, largo, peso, nombreCientifico);
+        this.tamanoGarras = tamanoGarras;
+        this.velocidad = velocidad;
     }
 
-    @Override
-    public String dormir() {
-        return null;
+    public float getTamanoGarras() {
+        return tamanoGarras;
     }
 
-    @Override
-    public String correr() {
-        return null;
+    public double getVelocidad() {
+        return velocidad;
     }
 
-    @Override
-    public String comunicarse() {
-        return null;
-    }
 }
